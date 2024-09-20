@@ -1,30 +1,22 @@
 package CoreJava.Chapter_7;
 
-public class Methods {
+public class Method_Overloading {
 
-    static int sum(int x, int y){
-        int z;
-        if(x > y){
-            z = x+y;
-        }
-        else {
-            z = (x + y) * 5;
-        }
-        return z;
+    static void overLoad(){
+        System.out.println("Hii Raj");
+    }
+    static void overLoad(int a){
+        System.out.println("Hii Raj, your first no: "+a);
+    }
+    static void overLoad(int a, int b){
+        System.out.println("Hii, Raj your first no:  "+a+ " Your second no: "+b);
     }
 
     public static void main(String[] args) {
 
-        int a = 5;
-        int b = 10;
-        int c;
-        c = sum(a,b);
+        overLoad();
+        overLoad(59);
+        overLoad(95, 98);
 
-//        Method invocation using Object Creation
-        /*
-        * Methods obj = new Methods();
-        * c = obj.sum(a,b);
-        */
-        System.out.println(c);
     }
 }
