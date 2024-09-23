@@ -50,6 +50,18 @@ class Rectangle{
     }
 }
 
+class Tommy{
+    public void hit(){
+        System.out.println("Hitting the enemy...");
+    }
+    public void run(){
+        System.out.println("Running from the enemy");
+    }
+    public void fire(){
+        System.out.println("Firing on the enemy");
+    }
+}
+
 public class Practice_Custom_Class {
     public static void main(String[] args) {
 
@@ -57,7 +69,7 @@ public class Practice_Custom_Class {
         Employee1 raj = new Employee1();
         raj.setName("Rajkishore Behera");
         System.out.println(raj.getName());
-        
+
         raj.salary = 25000;
         System.out.println(raj.getSalary());
 
@@ -71,24 +83,31 @@ public class Practice_Custom_Class {
         System.out.println("Calculating area and perimeter of the square");
         Square sq = new Square();
         Scanner sc = new Scanner(System.in);
-        
+
         System.out.print("Enter Number: ");
         sq.side = sc.nextInt();
-        
+
         System.out.println(sq.area());
         System.out.println(sq.perimeter());
 
 //        Problem 4
         System.out.println("Calculating area and perimeter of the rectangle");
         Rectangle rectangle = new Rectangle();
-        
+
         System.out.print("Enter height: ");
         rectangle.height = sc.nextInt();
-        
+
         System.out.print("Enter width: ");
         rectangle.width = sc.nextInt();
-        
+
         System.out.println("Area of the rectangle is: " + rectangle.area());
         System.out.println("Parameter of the rectangle is: " + rectangle.perimeter());
+
+//        Problem 5
+        System.out.println("< < < The End Game > > >");
+        Tommy player = new Tommy();
+        player.hit();
+        player.run();
+        player.fire();
     }
 }
