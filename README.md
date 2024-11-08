@@ -5,5 +5,5 @@
 
 - [CoreJava](CoreJava/): Foundational Java topics.
 - [DataStructures](DataStructures/): DataStructures using java.
-- - [JavaUI](JavaUI/): Learning about java UI.
+- [JavaUI](JavaUI/): Learning about java UI.
 - [Projects](Projects/): All types of projects using java.
